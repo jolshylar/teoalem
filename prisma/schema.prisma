@@ -25,13 +25,13 @@ model Formula {
     createdAt   DateTime @default(now())
     updatedAt   DateTime @default(now()) @updatedAt
     // Formula Category
+    categoryId  String
     category    Category @relation(fields: [categoryId], references: [id])
     // Formula Author
     authorId    String
     authorName  String
     authorImage String
     author      User     @relation(fields: [authorId], references: [id])
-    categoryId  String
 }
 
 // Each formula has 1 category, e.g. Trygonometry
