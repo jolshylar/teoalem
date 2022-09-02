@@ -1,10 +1,11 @@
 // src/server/router/index.ts
 import { createRouter } from "./context";
 import superjson from "superjson";
+import { formulaRouter } from "./formula";
 
 export const appRouter = createRouter()
   .transformer(superjson)
-  // .merge("formula.", formulaRouter);
+  .merge("formula.", formulaRouter);
 
 // export type definition of API
 export type AppRouter = typeof appRouter;
