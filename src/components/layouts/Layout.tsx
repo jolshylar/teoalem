@@ -29,7 +29,7 @@ const Layout = ({ children }: LayoutProps) => {
         />
         <title>TeoAlem - Formulas Quickly</title>
       </Head>
-      <main>{children}</main>
+      {children}
     </>
   );
 };
