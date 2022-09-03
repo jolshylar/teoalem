@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
-import Avatar from "../components/Avatar";
-import Page from "../components/layouts/Page";
-import { trpc } from "../utils/trpc";
+import Avatar from "../../components/Avatar";
+import Page from "../../components/layouts/Page";
+import { trpc } from "../../utils/trpc";
 
 const UserProfile = () => {
   const router = useRouter();
