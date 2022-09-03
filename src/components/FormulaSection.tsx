@@ -13,7 +13,7 @@ import {
   INPUT_SELECT,
   INPUT_TEXT,
   LABEL,
-  TOPIC,
+  CATEGORY,
 } from "../styles";
 import { IoAdd, IoPeople } from "react-icons/io5";
 import Avatar from "./Avatar";
@@ -222,12 +222,12 @@ export const Formula = ({ data, categoriesQuery }: FormulaProps) => {
       </Link>
       <p className="text-gray-400">{data.description}</p>
       <div className="my-2 flex justify-between">
-        <span className={`${TOPIC} flex items-center gap-2`}>
+        <span className={`${CATEGORY} flex items-center gap-2`}>
           <IoPeople className="w-5 h-5" /> 0 participants
         </span>
         {category && (
           <span
-            className={`${TOPIC} flex items-center gap-2`}
+            className={`${CATEGORY} flex items-center gap-2`}
             key={data.categoryId}
           >
             {category.image && <img src={category.image} className="w-4 h-4" />}
