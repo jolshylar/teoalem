@@ -17,7 +17,7 @@ const Page = ({ children, className = "", title }: PageProps) => {
           <meta name="og:title" content={t} />
         </Head>
       )}
-      <main className={className}>{children}</main>
+      <main className={`m-2 p-2 ${className}`}>{children}</main>
     </>
   );
 };

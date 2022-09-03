@@ -2,6 +2,7 @@ import Page from "../components/layouts/Page";
 import { trpc } from "../utils/trpc";
 import { useSession } from "next-auth/react";
 import FormulaSection from "../components/FormulaSection";
+import Categories from "../components/Categories";
 
 const Formulas = () => {
   const { data: session } = useSession();
@@ -26,6 +27,7 @@ const Formulas = () => {
         </p>
       </div>
       <div className="my-8 block md:grid md:grid-cols-3 md:justify-items-center">
+        <Categories />
         <FormulaSection formulasQuery={formulasQuery} session={session} />
       </div>
     </Page>
